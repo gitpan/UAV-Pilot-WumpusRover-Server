@@ -1,0 +1,13 @@
+Perl library for the server side of the WumpusRover.  See UAV::Pilot for 
+controlling the WumpusRover on the client side.
+
+
+INSTALLATION
+============
+
+Install with the standard Module::Build method:
+
+    perl ./Build.PL
+    ./Build
+    ./Build test
+    ./Build install

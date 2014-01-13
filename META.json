@@ -1,0 +1,69 @@
+{
+   "abstract" : "Control the WumpusRover",
+   "author" : [
+      "Timm Murray <tmurray@wumpus-cave.net>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.120351",
+   "license" : [
+      "bsd"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "UAV-Pilot-WumpusRover-Server",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.40"
+         }
+      },
+      "runtime" : {
+         "recommends" : {
+            "Getopt::Long" : "0"
+         },
+         "requires" : {
+            "HiPi" : "0",
+            "Moose" : "0",
+            "Test::More" : "0",
+            "Throwable" : "0",
+            "Tie::IxHash" : "0",
+            "UAV::Pilot" : 0,
+            "perl" : 0
+         }
+      }
+   },
+   "provides" : {
+      "UAV::Pilot::WumpusRover::Server" : {
+         "file" : "lib/UAV/Pilot/WumpusRover/Server.pm",
+         "version" : "0.1"
+      },
+      "UAV::Pilot::WumpusRover::Server::Backend" : {
+         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend.pm",
+         "version" : 0
+      },
+      "UAV::Pilot::WumpusRover::Server::Backend::Mock" : {
+         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend/Mock.pm",
+         "version" : 0
+      },
+      "UAV::Pilot::WumpusRover::Server::Backend::RaspberryPiI2C" : {
+         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend/RaspberryPiI2C.pm",
+         "version" : 0
+      },
+      "UAV::Pilot::WumpusRover::Server::Mock" : {
+         "file" : "lib/UAV/Pilot/WumpusRover/Server/Mock.pm",
+         "version" : 0
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://opensource.org/licenses/bsd-license.php"
+      ],
+      "repository" : {
+         "url" : "https://github.com/frezik/UAV-Pilot-WumpusRover-Server"
+      }
+   },
+   "version" : "0.1"
+}

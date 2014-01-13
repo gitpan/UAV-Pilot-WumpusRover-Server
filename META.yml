@@ -1,0 +1,44 @@
+---
+abstract: 'Control the WumpusRover'
+author:
+  - 'Timm Murray <tmurray@wumpus-cave.net>'
+build_requires: {}
+configure_requires:
+  Module::Build: 0.40
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.120351'
+license: bsd
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: UAV-Pilot-WumpusRover-Server
+provides:
+  UAV::Pilot::WumpusRover::Server:
+    file: lib/UAV/Pilot/WumpusRover/Server.pm
+    version: 0.1
+  UAV::Pilot::WumpusRover::Server::Backend:
+    file: lib/UAV/Pilot/WumpusRover/Server/Backend.pm
+    version: 0
+  UAV::Pilot::WumpusRover::Server::Backend::Mock:
+    file: lib/UAV/Pilot/WumpusRover/Server/Backend/Mock.pm
+    version: 0
+  UAV::Pilot::WumpusRover::Server::Backend::RaspberryPiI2C:
+    file: lib/UAV/Pilot/WumpusRover/Server/Backend/RaspberryPiI2C.pm
+    version: 0
+  UAV::Pilot::WumpusRover::Server::Mock:
+    file: lib/UAV/Pilot/WumpusRover/Server/Mock.pm
+    version: 0
+recommends:
+  Getopt::Long: 0
+requires:
+  HiPi: 0
+  Moose: 0
+  Test::More: 0
+  Throwable: 0
+  Tie::IxHash: 0
+  UAV::Pilot: 0
+  perl: 0
+resources:
+  license: http://opensource.org/licenses/bsd-license.php
+  repository: https://github.com/frezik/UAV-Pilot-WumpusRover-Server
+version: 0.1
