@@ -11,12 +11,14 @@ my $build = Module::Build->new(
     license           => 'bsd',
     requires          => {
         perl          => '>= 5.14.0',
-        'UAV::Pilot'  => '>= 0.8',
+        'AnyEvent'    => 0,
         'HiPi'        => 0,
         'Moose'       => 0,
         'Test::More'  => 0,
-        'Tie::IxHash' => 0,
         'Throwable'   => 0,
+        'Tie::IxHash' => 0,
+        'UAV::Pilot'  => '>= 0.8',
+
     },
     recommends => {
         'Getopt::Long' => 0,

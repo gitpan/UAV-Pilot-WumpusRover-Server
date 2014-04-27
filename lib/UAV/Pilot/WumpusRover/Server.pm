@@ -11,7 +11,7 @@ use Errno qw(:POSIX);
 use constant BUF_LENGTH => 1024;
 use constant SLEEP_LOOP_US => 1_000_000 / 100; # In microseconds
 
-our $VERSION = 0.1;
+our $VERSION = 0.2;
 
 
 has 'listen_port' => (
@@ -360,5 +360,12 @@ The output min/max settings don't have this problem.
 
 The primary use of this method is for backends to map the channel values held 
 by the Server object into the output needed by the backend connection.
+
+=head1 SETTING UP THE RASPBERRY PI CAMERA
+
+On Raspbian, follow the instructions below for installing the Raspicam v4l
+driver:
+
+L<http://www.linux-projects.org/modules/sections/index.php?op=viewarticle&artid=16>
 
 =cut

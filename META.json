@@ -4,7 +4,7 @@
       "Timm Murray <tmurray@wumpus-cave.net>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.120351",
+   "generated_by" : "Module::Build version 0.4205",
    "license" : [
       "bsd"
    ],
@@ -16,7 +16,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.40"
+            "Module::Build" : "0.42"
          }
       },
       "runtime" : {
@@ -24,46 +24,43 @@
             "Getopt::Long" : "0"
          },
          "requires" : {
+            "AnyEvent" : "0",
             "HiPi" : "0",
             "Moose" : "0",
             "Test::More" : "0",
             "Throwable" : "0",
             "Tie::IxHash" : "0",
-            "UAV::Pilot" : 0,
-            "perl" : 0
+            "UAV::Pilot" : ">= 0.8",
+            "perl" : ">= 5.14.0"
          }
       }
    },
    "provides" : {
       "UAV::Pilot::WumpusRover::Server" : {
          "file" : "lib/UAV/Pilot/WumpusRover/Server.pm",
-         "version" : "0.1"
+         "version" : "0.2"
       },
       "UAV::Pilot::WumpusRover::Server::Backend" : {
-         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend.pm",
-         "version" : 0
+         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend.pm"
       },
       "UAV::Pilot::WumpusRover::Server::Backend::Mock" : {
-         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend/Mock.pm",
-         "version" : 0
+         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend/Mock.pm"
       },
       "UAV::Pilot::WumpusRover::Server::Backend::RaspberryPiI2C" : {
-         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend/RaspberryPiI2C.pm",
-         "version" : 0
+         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend/RaspberryPiI2C.pm"
       },
       "UAV::Pilot::WumpusRover::Server::Mock" : {
-         "file" : "lib/UAV/Pilot/WumpusRover/Server/Mock.pm",
-         "version" : 0
+         "file" : "lib/UAV/Pilot/WumpusRover/Server/Mock.pm"
       }
    },
    "release_status" : "stable",
    "resources" : {
       "license" : [
-         "http://opensource.org/licenses/bsd-license.php"
+         "http://opensource.org/licenses/BSD-3-Clause"
       ],
       "repository" : {
          "url" : "https://github.com/frezik/UAV-Pilot-WumpusRover-Server"
       }
    },
-   "version" : "0.1"
+   "version" : "0.2"
 }
