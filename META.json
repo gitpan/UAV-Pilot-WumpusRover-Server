@@ -1,10 +1,10 @@
 {
-   "abstract" : "Control the WumpusRover",
+   "abstract" : "$in_min == 0>, which avoids a divide-by-zero error. This isn't correct behavior and will be fixed Soon(tm). The output min/max settings don't have this problem.",
    "author" : [
       "Timm Murray <tmurray@wumpus-cave.net>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4205",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.140640",
    "license" : [
       "bsd"
    ],
@@ -16,11 +16,13 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.42"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "runtime" : {
          "recommends" : {
+            "Device::WebIO" : "0.008",
+            "GStreamer1" : "0.003",
             "Getopt::Long" : "0"
          },
          "requires" : {
@@ -30,37 +32,26 @@
             "Test::More" : "0",
             "Throwable" : "0",
             "Tie::IxHash" : "0",
-            "UAV::Pilot" : ">= 0.8",
-            "perl" : ">= 5.14.0"
+            "UAV::Pilot" : "0.8",
+            "UAV::Pilot::WumpusRover" : "0.2",
+            "perl" : "v5.14.0"
          }
-      }
-   },
-   "provides" : {
-      "UAV::Pilot::WumpusRover::Server" : {
-         "file" : "lib/UAV/Pilot/WumpusRover/Server.pm",
-         "version" : "0.2"
       },
-      "UAV::Pilot::WumpusRover::Server::Backend" : {
-         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend.pm"
-      },
-      "UAV::Pilot::WumpusRover::Server::Backend::Mock" : {
-         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend/Mock.pm"
-      },
-      "UAV::Pilot::WumpusRover::Server::Backend::RaspberryPiI2C" : {
-         "file" : "lib/UAV/Pilot/WumpusRover/Server/Backend/RaspberryPiI2C.pm"
-      },
-      "UAV::Pilot::WumpusRover::Server::Mock" : {
-         "file" : "lib/UAV/Pilot/WumpusRover/Server/Mock.pm"
+      "test" : {
+         "requires" : {
+            "Test::Pod" : "0"
+         }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "license" : [
-         "http://opensource.org/licenses/BSD-3-Clause"
-      ],
+      "homepage" : "http://www.wumpus-cave.net",
       "repository" : {
-         "url" : "https://github.com/frezik/UAV-Pilot-WumpusRover-Server"
+         "type" : "git",
+         "url" : "https://github.com/frezik/UAV-Pilot-WumpusRover-Server.git",
+         "web" : "https://github.com/frezik/UAV-Pilot-WumpusRover-Server"
       }
    },
-   "version" : "0.2"
+   "version" : "0.3"
 }
+

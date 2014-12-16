@@ -11,7 +11,7 @@ use Errno qw(:POSIX);
 use constant BUF_LENGTH => 1024;
 use constant SLEEP_LOOP_US => 1_000_000 / 100; # In microseconds
 
-our $VERSION = 0.2;
+our $VERSION = 0.3;
 
 
 has 'listen_port' => (
